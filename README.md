@@ -38,6 +38,7 @@ C:\powershell\. .\SetupGuestSharingForTeamSites.ps1
 (3)
 C:\powershell\Set-ExternalUserAndGuestSharingForTeamSites
 
+***Output:***
 Fetching all the group sites
 Found [4] group sites
 Updating the sharing Capability of the following sites to ExternalUserAndGuestSharing
