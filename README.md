@@ -6,7 +6,7 @@ Trademarks mentioned here are the property of their owners.
 
 SharePoint Online has both global (tenant-wide) and site collection settings for external sharing. The tenant-level settings override any settings at the site collection level. For setting up Sharing with anonymous users, both global and site collection settings has to be turned on. See [Turn external sharing on or off for SharePoint Online](https://support.office.com/en-us/article/turn-external-sharing-on-or-off-for-sharepoint-online-6288296a-b6b7-4ea4-b4ed-c297bf833e30).
 
-For O365 group sites (including Microsoft Teams), the sites created do not have sharing with anonymous users turned on. Instead of turning it on manually for each site, the uploaded powershell script allows to set all the modern groups or Team sites sharing capability to ExternalUserAndGuestSharing in an SPO tenant. It enables the creation of anonymous or guest links allowing users to view the content without logging in. This is needed for the class notebook parent and guardian links to work.
+For O365 group sites (including Microsoft Teams), the sites created do not have sharing with anonymous users turned on by default. Instead of turning it on manually for each site, the uploaded powershell script allows to set all the modern groups or Team sites sharing capability to ExternalUserAndGuestSharing in an SPO tenant. It enables the creation of anonymous or guest links allowing users to view the content without logging in. This is needed for the class notebook parent and guardian links to work.
 
 IMPORTANT:
 - If sharing with anonymous users is enabled globally on the tenant and for group sites, then any member of the group can share anonymous links in the corresponding site.
