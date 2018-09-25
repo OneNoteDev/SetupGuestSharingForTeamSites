@@ -23,27 +23,25 @@ The PowerShell script contains the following cmdlets that can be made available 
 
 The cmdlets is as follows:
 
-Set-ExternalUserAndGuestSharingForTeamSites
+    Set-ExternalUserAndGuestSharingForTeamSites
 
 It can be used to set the team sites to enable external user And guest sharing. 
 
 ### Example of how to run it ###
 From the SharePoint Online Management Shell, run the following:
-(1)
-C:\powershell\Connect-SPOService -Url https://contoso-admin.sharepoint.com
 
-(2)
-C:\powershell\. .\SetupGuestSharingForTeamSites.ps1
+    C:\powershell\Connect-SPOService -Url https://contoso-admin.sharepoint.com
 
-(3)
-C:\powershell\Set-ExternalUserAndGuestSharingForTeamSites
+    C:\powershell\. .\SetupGuestSharingForTeamSites.ps1
+    
+    C:\powershell\Set-ExternalUserAndGuestSharingForTeamSites
 
 ***Output:***
-Fetching all the group sites
-Found [4] group sites
-Updating the sharing Capability of the following sites to ExternalUserAndGuestSharing
+    Fetching all the group sites
+    Found [4] group sites
+    Updating the sharing Capability of the following sites to ExternalUserAndGuestSharing
 
-1- https://contososdorg.sharepoint.com/sites/13082018CNBTeams
-2- https://contososdorg.sharepoint.com/sites/Section_60917
-3- https://contososdorg.sharepoint.com/sites/Mattie111
-4- https://contososdorg.sharepoint.com/sites/Section_60857
+    1- https://contososdorg.sharepoint.com/sites/13082018CNBTeams
+    2- https://contososdorg.sharepoint.com/sites/Section_60917
+    3- https://contososdorg.sharepoint.com/sites/Mattie111
+    4- https://contososdorg.sharepoint.com/sites/Section_60857
