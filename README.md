@@ -4,7 +4,8 @@ Created by Microsoft Corporation, 2018.
 Provided as-is without warranty. 
 Trademarks mentioned here are the property of their owners.
 
-Allows to set all the modern groups or Team sites sharing capability to ExternalUserAndGuestSharing in an SPO tenant. It enables the creation of anonymous or guest links allowing users to view the content without logging in. This is needed for the class notebook parent links to work.
+Allows to set all the modern groups or Team sites sharing capability to ExternalUserAndGuestSharing in an SPO tenant. 
+It enables the creation of anonymous or guest links allowing users to view the content without logging in. This is needed for the class notebook parent links to work.
 
 ### Prerequisites ###
 Before you begin running the Scripts, review the following information about prerequisites:
@@ -17,9 +18,9 @@ Also verify the following:
 
 ### SetupGuestSharingForTeamSites.ps1 ###
 
-The PowerShell script contains the following cmdlets that can be made available by loading the script
+The PowerShell script contains a cmdlet that can be made available by loading the script
 
-    .. C:\powershell\SetupGuestSharingForTeamSites.ps1
+    . .\SetupGuestSharingForTeamSites.ps1
 
 The cmdlets is as follows:
 
@@ -32,7 +33,7 @@ From the SharePoint Online Management Shell, run the following:
 
     C:\powershell\Connect-SPOService -Url https://contoso-admin.sharepoint.com
 
-    C:\powershell\. .\SetupGuestSharingForTeamSites.ps1
+    C:\powershell\ . .\SetupGuestSharingForTeamSites.ps1
     
     C:\powershell\Set-ExternalUserAndGuestSharingForTeamSites
 
