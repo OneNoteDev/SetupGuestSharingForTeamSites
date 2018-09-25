@@ -37,11 +37,12 @@ From the SharePoint Online Management Shell, run the following:
     C:\powershell\Set-ExternalUserAndGuestSharingForTeamSites
 
 ***Output:***
+
     Fetching all the group sites
     Found [4] group sites
     Updating the sharing Capability of the following sites to ExternalUserAndGuestSharing
 
-    1- https://contososdorg.sharepoint.com/sites/13082018CNBTeams
-    2- https://contososdorg.sharepoint.com/sites/Section_60917
-    3- https://contososdorg.sharepoint.com/sites/Mattie111
-    4- https://contososdorg.sharepoint.com/sites/Section_60857
+    1- https://contoso.sharepoint.com/sites/13082018CNBTeams
+    2- https://contoso.sharepoint.com/sites/Section_60917
+    3- https://contoso.sharepoint.com/sites/Mattie111
+    4- https://contoso.sharepoint.com/sites/Section_60857
