@@ -27,7 +27,7 @@ The cmdlets is as follows:
 
 It can be used to set the team sites to enable external user And guest sharing. 
 
-### Example of how to run it ###
+### Example ###
 From the SharePoint Online Management Shell, run the following:
 
     C:\powershell\Connect-SPOService -Url https://contoso-admin.sharepoint.com
@@ -35,8 +35,6 @@ From the SharePoint Online Management Shell, run the following:
     C:\powershell\. .\SetupGuestSharingForTeamSites.ps1
     
     C:\powershell\Set-ExternalUserAndGuestSharingForTeamSites
-
-***Output:***
 
     Fetching all the group sites
     Found [4] group sites
