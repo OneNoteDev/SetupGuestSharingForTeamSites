@@ -1,6 +1,7 @@
 ## Setup Guest Sharing For Team Sites ##
 
-Created by Microsoft Corporation, 2016. Provided as-is without warranty. 
+Created by Microsoft Corporation, 2018. 
+Provided as-is without warranty. 
 Trademarks mentioned here are the property of their owners.
 
 Allows to set all the modern groups or Team sites sharing capability to ExternalUserAndGuestSharing in an SPO tenant. It enables the creation of anonymous or guest links allowing users to view the content without logging in. This is needed for the class notebook parent links to work.
