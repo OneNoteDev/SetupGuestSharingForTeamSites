@@ -40,7 +40,8 @@
                 {
                     Write-Host $i- "$($site.Url)"
                     $i = $i + 1
-                    Set-SPOSite -Identity $site.Url -SharingCapability ExternalUserAndGuestSharing 
+                    Set-SPOSite -Identity $site.Url -SharingCapability ExternalUserAndGuestSharing
+                    Start-Sleep -s 5
                 }
                 catch
                 {
