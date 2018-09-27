@@ -17,16 +17,37 @@
 	    try
 	    {
             Write-Host "`nFetching all the group sites"
-            $moderngroupsites = Get-SPOSite -Template GROUP#0 -IncludePersonalSite:$false -Limit ALL
+            $moderngroupsites = Get-SPOSite -Template GROUP#0 -IncludePersonalSite:$false -Limit all | Select-Object -Property SharingCapability, Url
             Write-Host "Found [$($moderngroupsites.Length)] group sites"
+
+            write-Host "`nFiltering out the sites that have ExternalUserAndGuestSharing enabled"
+            $listCollection = New-Object System.Collections.Generic.List[object]
+            foreach ($moderngroupsite in $moderngroupsites) 
+            { 
+                if ($moderngroupsite.SharingCapability -ne "ExternalUserAndGuestSharing")
+                {
+                    $listCollection.Add($moderngroupsite)
+                }
+            }
+
+            Write-Host "Found [$($listCollection.count)] group sites to be enabled"
             Write-Host "Updating the sharing Capability of the following sites to ExternalUserAndGuestSharing `n"
             $i=1
             
-            foreach ($site in $moderngroupsites) 
+            foreach ($site in $listCollection) 
             { 
-                Write-Host $i- "$($site.Url)"
-                Set-SPOSite -Identity $site.Url -SharingCapability ExternalUserAndGuestSharing 
-                $i = $i + 1
+                try
+                {
+                    Write-Host $i- "$($site.Url)"
+                    $i = $i + 1
+                    Set-SPOSite -Identity $site.Url -SharingCapability ExternalUserAndGuestSharing 
+                }
+                catch
+                {
+                    Write-Host
+                    Write-Host $_.Exception.Message
+                    Write-Host
+                }
             }
 
 	    }
